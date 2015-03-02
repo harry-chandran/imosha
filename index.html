@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html  ng-app="IcardsApp">
+<head>
+<meta charset="utf-8" />
+<title>Imosha</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/main.css">
+<style>
+.fullScreen{
+	border-bottom: 1px solid #ccc;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin:0px;
+}
+.navbar{
+	background: #F77D2B;
+	color: #fff;
+}
+.no-pad{
+	padding: 0px;
+}
+.xs-pad{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.sm-pad{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.md-pad{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.lg-pad{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.no-lpad{
+	padding-left: 0px;
+}
+
+.navbar-inverse{
+	border: none;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #FD9431;
+    color: #fff;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
+	background: #fd9431;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+	border-color: #F77D2B;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #fff;
+    border: none;
+}
+.navbar-inverse .navbar-toggle{
+	border: 1px solid #fff;
+}
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
+
+
+  .testimonial h2{
+	background: #ccc;
+  }
+  .testimonial .block{
+	background: #54ACD2;
+	padding: 10px;
+	border: 1px solid #ddd;
+	color: #fff;
+	font-style: italic;
+  }
+  .testimonial .author{
+  }
+
+  .author .authorImg{
+	width: 75px;
+	height: 75px;
+	border-radius: 75px;
+	border: 1px solid #ccc;
+	background: #ccc;
+	display: inline-block;
+}
+  .author .authorDetails{
+  	line-height: 30px;
+	padding: 10px;
+  }
+  .authorDetails h3{
+	font-size: 14px;
+  }
+  .upcomingEve{
+
+  }
+  .upcomingEve h3{
+	margin: 0px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	background: #434a54;
+	color: #fff;
+  }
+  .upcomingEve .block{
+	background: #ccc;
+	margin: 0px;
+  }
+.toksenYoga{
+	
+}
+.toksenYoga a{
+  
+    display: block;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 13px;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;  
+    background: #F77D2B;	
+	border-radius: 10px;
+	 border: 1px solid #ccc;
+}
+.toksenYoga a:hover{
+	background: #fd9431;
+	color: #fff;
+    text-decoration: none;
+}
+</style>
+</head>
+ 
+<body>
+	<div class="container-fluid">
+
+		<header class="row">
+			<div class="col-sm-6">
+				<img src="images/logo.png" alt="" >
+			</div>
+			<div class="col-sm-6 text-right no-pad">
+				<img src="images/top.png" alt="">
+			</div>
+		</header>
+
+	<!-- Start navigation -->
+		<nav class="row navbar navbar-inverse" role="navigation" style="margin-bottom:0px;">
+			<div class="container">								
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- <a href="index.html" class="navbar-brand">myIcardz</a>	 -->				
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="">Home</a></li>
+						<li><a href="">Lists</a></li>
+						<li><a href="">Clients</a></li>
+						<li><a href="">Contact</a></li>
+						<li class="dropdown">
+							<a href="" class="dropdown-toggle" data-toggle="dropdown">Service <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="">facebook</a></li>
+								<li><a href="">Twitter</a></li>
+								<li><a href="">Google+</a></li>
+								<li><a href="">LinkedIn</a></li>
+							</ul>
+						</li>						
+					</ul>																														
+				</div>
+			</div>
+		</nav>
+
+		<!-- Start slide show -->
+
+		<section>
+			<div class="row">
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				    <li data-target="#myCarousel" data-slide-to="1"></li>
+				    <li data-target="#myCarousel" data-slide-to="2"></li>
+				    <li data-target="#myCarousel" data-slide-to="3"></li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				    <div class="item active">
+				      <img src="images/3-slider.png" alt="Chania">
+				    </div>
+
+				    <div class="item">
+				      <img src="images/3-slider.png" alt="Chania">
+				    </div>
+
+				    <div class="item">
+				      <img src="images/3-slider.png" alt="Flower">
+				    </div>
+
+				    <div class="item">
+				      <img src="images/3-slider.png" alt="Flower">
+				    </div>
+				  </div>
+
+				  <!-- Left and right controls -->
+				  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+
+			</div>
+
+
+			
+		</section>
+		<!-- End slide show -->
+
+		<!-- Start testimonial  -->
+		<div class="fullScreen row testimonial" >
+			<h2 class="text-center lg-pad">Testimonials</h2>
+			<section class="container md-pad">
+				<div class="row">				
+					<div class="col-xs-4 ">
+						<div class="container-fluid">
+							<div class="row" style="border:1px solid #54acd2">
+								<p class="block" style="margin:0px;">
+									There are many places I have taken massage like UK, Turkey, Thailand, Malayasia and India. This I must say is the best experience ever. Done it twice and will do each time I come to India. It’s not a massage. It’s a totally different experience
+								</p>
+
+								<div class="author xs-pad" style="overflow:hidden">
+									<div class="col-xs-4 text-center"><img src="" alt="" class="authorImg"></div>
+									<div class="col-xs-8 authorDetails">
+										<h4>xxyyzz</h4>
+										<p>Software Engineer</p>
+									</div>
+								</div>
+							</div>	
+						</div>						
+					</div>
+					<div class="col-xs-4">
+						<div class="container-fluid">
+							<div class="row" style="border-radius:5px;box-shadow:0px 0px 1px 1px #ccc;padding:5px;">
+								<p class="block" style="margin:0px;background:#FAFAFA;color:#39414b">
+									There are many places I have taken massage like UK, Turkey, Thailand, Malayasia and India. This I must say is the best experience ever. Done it twice and will do each time I come to India. It’s not a massage. It’s a totally different experience
+								</p>
+
+								<div class="author xs-pad" style="overflow:hidden">
+									<div class="col-xs-4 text-center"><img src="" alt="" class="authorImg"></div>
+									<div class="col-xs-8 authorDetails">
+										<h4 style="font-weight:bold;color:#0887B4">xxyyzz</h4>
+										<p>Software Engineer</p>
+									</div>
+								</div>
+							</div>	
+						</div>						
+					</div>
+					<div class="col-xs-4 ">
+						<div class="container-fluid">
+							<div class="row" style="border:1px solid #54acd2">
+								<p class="block" style="margin:0px;">
+									There are many places I have taken massage like UK, Turkey, Thailand, Malayasia and India. This I must say is the best experience ever. Done it twice and will do each time I come to India. It’s not a massage. It’s a totally different experience
+								</p>
+
+								<div class="author xs-pad" style="overflow:hidden">
+									<div class="col-xs-4 text-center"><img src="" alt="" class="authorImg"></div>
+									<div class="col-xs-8 authorDetails">
+										<h4>xxyyzz</h4>
+										<p>Software Engineer</p>
+									</div>
+								</div>
+							</div>	
+						</div>						
+					</div>
+				</div>
+
+			</section>
+		</div>
+
+		<div class="fullScreen row md-pad upcomingEve" >
+			<section class="container">
+				<div class="row">
+					<h2 class="text-center md-pad">Upcoming Events</h2>
+
+					<div class="col-sm-6 no-pad sm-pad" >
+						<div class="container-fluid">
+							<div class="row block sm-pad">
+									<div class="col-xs-6">
+										<div>
+											<h3>Pranayama</h3>
+										</div>
+										<img src="images/yoga.jpg" alt="" class="img-responsive">
+									</div>
+									<div class="col-xs-6 no-lpad">
+										<div>
+											<h3>Feb 21st 2015</h3>
+										</div>
+										<p>
+											There are many places I have taken massage like UK, Turkey, Thailand, Malayasia and India. This I must say is the best 
+										</p>
+									</div>								
+							</div>
+						</div>							
+					</div>
+
+					<div class="col-sm-6 no-pad sm-pad">
+						<div class="container-fluid">
+							<div class="row block sm-pad">
+									<div class="col-xs-6">
+										<div>
+											<h3>Palm Meadows</h3>
+										</div>
+										<img src="images/yoga.jpg" alt="" class="img-responsive">
+									</div>
+									<div class="col-xs-6 no-lpad">
+										<div>
+											<h3>Feb 21st 2015</h3>
+										</div>
+										<p>
+											There are many places I have taken massage like UK, Turkey, Thailand, Malayasia and India. This I must say is the best 
+										</p>
+									</div>								
+							</div>
+						</div>							
+					</div>					
+				</div>
+				<div class="row">	
+					<div class="col-sm-6 no-pad sm-pad">
+						<div class="container-fluid">
+							<div class="row block sm-pad">
+									<div class="col-xs-6">
+										<div>
+											<h3>Surya Kriya</h3>
+										</div>
+										<img src="images/yoga.jpg" alt="" class="img-responsive">
+									</div>
+									<div class="col-xs-6 no-lpad">
+										<div>
+											<h3>Feb 21st 2015</h3>
+										</div>
+										<p>
+											There are many places I have taken massage like UK, Turkey, Thailand, Malayasia and India. This I must say is the best 
+										</p>
+									</div>								
+							</div>
+						</div>							
+					</div>
+				</div>
+
+			</section>
+		</div>
+
+
+		<div class="fullScreen row md-pad" >
+			<section class="container">
+				<div class="row" style="margin-bottom:10px;">
+					<h2 class="text-center md-pad">Main course</h2>
+					<div class="col-sm-6 sm-pad">
+						<div class="toksenYoga">
+							<a href="" >
+								<h3 class="xs-pad">Thai Yoga Body Work.</h3>
+								<p>
+									There are many places I have taken massage like UK, Turkey, Thailand, Malayasia and India. This I must say is the best 
+								</p>
+							</a>
+						</div>
+							
+					</div>
+					<div class="col-sm-6 sm-pad">
+						<div class="toksenYoga">
+							<a href="">
+								<h3 class="xs-pad">Toksen</h3>
+								<p>
+									There are many places I have taken massage like UK, Turkey, Thailand, Malayasia and India. This I must say is the best 
+								</p>
+							</a>
+						</div>
+					</div>
+			</section>
+		</div>
+
+			
+		<footer class="container"> 
+	            <ul id="footer-link"><span style="float:left; font-size:11px;">&copy;2012 imosha.com</span>
+	                <li><a href="thai-yoga-bodywork.php">Healing Arts</a></li>|
+	                <li><a href="courses.php">Course</a></li>|
+	                <li><a href="therapy.php">Therapy</a></li>|
+	                <li><a href="aboutme.php">About me</a></li>|
+	                <li><a href="schedule.php">Schedule</a></li>|
+	                <li><a href="faq.php">Faq</a></li>|
+	                <li><a href="contactus.php">Contact</a></li>
+	                <span class="powered">Powered By  :<a target="_blank" href="http://www.invensis.net/">Invensis</a></span>
+	            </ul>
+		 </footer>
+			
+		<!-- End testimonial  -->
+	</div>
+
+	<script src="js/lib/jquery-1.9.1.js"></script>		
+	<script src="js/lib/bootstrap.min.js"></script>	
+
+</body>
+</html>

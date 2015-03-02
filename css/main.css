@@ -1,0 +1,23 @@
+*{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box
+}
+html{
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+body {
+    color:#39414b;
+    font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
+    display: table;
+    width: 100%;
+}
+ul li{
+	list-style: none;
+}
+.clear{
+	clear: both;
+}
