@@ -7,10 +7,18 @@
 <link rel="stylesheet" href="css/main.css">
 <style>
 .fullScreen{
-	border-bottom: 1px solid #ccc;
+	1border-bottom: 1px solid #ccc;
 }
 h1,h2,h3,h4,h5,h6,p{
 	margin:0px;
+}
+h2{
+	font-size: 30px;
+	font-weight: bold;
+}
+h3{
+	font-size: 25px;
+	font-weight: 700;
 }
 .navbar{
 	background: #F77D2B;
@@ -69,10 +77,11 @@ h1,h2,h3,h4,h5,h6,p{
   }
 
 
-  .testimonial h2{
-	background: #ccc;
+  .testimonial h4{
+  	font-size: 13px;
+	color: #6FAF3C;
   }
-  .testimonial .block{
+  1.testimonial .block{
 	background: #54ACD2;
 	padding: 10px;
 	border: 1px solid #ddd;
@@ -83,9 +92,9 @@ h1,h2,h3,h4,h5,h6,p{
   }
 
   .author .authorImg{
-	width: 75px;
-	height: 75px;
-	border-radius: 75px;
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
 	border: 1px solid #ccc;
 	background: #ccc;
 	display: inline-block;
@@ -94,18 +103,20 @@ h1,h2,h3,h4,h5,h6,p{
   	line-height: 30px;
 	padding: 10px;
   }
-  .authorDetails h3{
-	font-size: 14px;
-  }
   .upcomingEve{
-
+  	line-height: 26px;
+  }
+  
+  .upcomingEve img{
+	width: 100%;
+	height: 100%;
   }
   .upcomingEve h3{
 	margin: 0px;
-	padding: 10px;
-	border: 1px solid #ccc;
-	background: #434a54;
-	color: #fff;
+	padding: 10px 0px 10px 0px;
+	border-bottom: 4px solid #2771bb;
+	1background: #434a54;
+	1color: #fff;
   }
   .upcomingEve .block{
 	background: #ccc;
@@ -126,12 +137,46 @@ h1,h2,h3,h4,h5,h6,p{
     text-decoration: none;  
     background: #F77D2B;	
 	border-radius: 10px;
-	 border: 1px solid #ccc;
 }
 .toksenYoga a:hover{
 	background: #fd9431;
 	color: #fff;
     text-decoration: none;
+}
+.dropdown-menu{
+	background:#FD9431;
+	color:#fff;
+}
+.dropdown-menu>li>a{
+	background:#FD9431;
+	color:#fff;
+}
+.toksenBlock{
+	color: #fff;
+	background: #242424;
+}
+.footerBlock{
+	background: #242424;
+	color: #fff;
+	border-top: 3px solid #f77d2b;
+	font-size: 13px;
+}
+.footerBlock a{
+	font-size: 13px;
+}
+.showMore a{
+
+    background: none repeat scroll 0 0 #bdbdbd;
+    border-radius: 3px;
+    box-shadow: 0 0 0 14px rgba(0, 0, 0, 0) inset;
+    color: #fff;
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 0.1px;
+    line-height: 20px;
+    margin-left: 10px;
+    padding: 0 10px;
+    text-transform: uppercase;
 }
 </style>
 </head>
@@ -141,10 +186,10 @@ h1,h2,h3,h4,h5,h6,p{
 
 		<header class="row">
 			<div class="col-sm-6">
-				<img src="images/logo.png" alt="" >
+				<img src="images/logo.png" alt="" class="img-responsive">
 			</div>
 			<div class="col-sm-6 text-right no-pad">
-				<img src="images/top.png" alt="">
+				<img src="images/top.png" alt="" class="img-responsive">
 			</div>
 		</header>
 
@@ -161,20 +206,24 @@ h1,h2,h3,h4,h5,h6,p{
 					<!-- <a href="index.html" class="navbar-brand">myIcardz</a>	 -->				
 				</div>
 				<div class="navbar-collapse collapse">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="">Home</a></li>
-						<li><a href="">Lists</a></li>
-						<li><a href="">Clients</a></li>
-						<li><a href="">Contact</a></li>
-						<li class="dropdown">
-							<a href="" class="dropdown-toggle" data-toggle="dropdown">Service <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="">facebook</a></li>
-								<li><a href="">Twitter</a></li>
-								<li><a href="">Google+</a></li>
-								<li><a href="">LinkedIn</a></li>
+					<ul class="nav navbar-nav  pull-right">
+						<li class="active">						
+							<a href="thai-yoga-bodywork.php"  class="dropdown-toggle" data-toggle="dropdown">Healing Arts</a>
+                              <ul class="dropdown-menu">
+								 <li><a href="tonsen.php">Tok sen</a></li>
+                                 <li><a href="thai-yoga-bodywork.php">Thai Yoga Bodywork</a></li>
 							</ul>
-						</li>						
+						</li>
+						<li class="dropdown">
+							<a href="courses.php"  class="dropdown-toggle" data-toggle="dropdown">Course</a>
+							<ul class="dropdown-menu">
+								<li><a href="tonsen_course.php">Tok sen</a></li>
+								<li><a href="thai-yoga-bodywork_course.php">Thai Yoga Bodywork</a></li>
+							</ul>
+						</li>
+						<li><a href="aboutme.php">About Us</a></li>     
+						<li><a href="schedule.php">Schedule</a></li> 
+						<li><a href="contactus.php">Contact</a></li>                                    	        
 					</ul>																														
 				</div>
 			</div>
@@ -231,144 +280,90 @@ h1,h2,h3,h4,h5,h6,p{
 		<!-- End slide show -->
 
 		<!-- Start testimonial  -->
-		<div class="fullScreen row testimonial" >
-			<h2 class="text-center lg-pad">Testimonials</h2>
-			<section class="container md-pad">
+		<div class="fullScreen row testimonial text-center" >
+			<h2 class="text-center lg-pad">What people are saying</h2>
+			<section class="container md-pad" style="margin-bottom:30px;">
 				<div class="row">				
-					<div class="col-xs-4 ">
-						<div class="container-fluid">
-							<div class="row" style="border:1px solid #54acd2">
+					<div class="col-sm-4 ">								
+						<div class="author" style="overflow:hidden">
+							<div ><img src="" alt="" class="authorImg"></div>
+							<div class="authorDetails">
+								<h3 class="xs-pad">xxyyzz</h3>
+								<h4>Software Engineer</h4>
+							</div>
+							<div>
 								<p class="block" style="margin:0px;">
 									There are many places I have taken massage like UK, Turkey, Thailand, Malayasia and India. This I must say is the best experience ever. Done it twice and will do each time I come to India. It’s not a massage. It’s a totally different experience
 								</p>
-
-								<div class="author xs-pad" style="overflow:hidden">
-									<div class="col-xs-4 text-center"><img src="" alt="" class="authorImg"></div>
-									<div class="col-xs-8 authorDetails">
-										<h4>xxyyzz</h4>
-										<p>Software Engineer</p>
-									</div>
-								</div>
-							</div>	
-						</div>						
+							</div>
+						</div>
 					</div>
-					<div class="col-xs-4">
-						<div class="container-fluid">
-							<div class="row" style="border-radius:5px;box-shadow:0px 0px 1px 1px #ccc;padding:5px;">
-								<p class="block" style="margin:0px;background:#FAFAFA;color:#39414b">
-									There are many places I have taken massage like UK, Turkey, Thailand, Malayasia and India. This I must say is the best experience ever. Done it twice and will do each time I come to India. It’s not a massage. It’s a totally different experience
-								</p>
-
-								<div class="author xs-pad" style="overflow:hidden">
-									<div class="col-xs-4 text-center"><img src="" alt="" class="authorImg"></div>
-									<div class="col-xs-8 authorDetails">
-										<h4 style="font-weight:bold;color:#0887B4">xxyyzz</h4>
-										<p>Software Engineer</p>
-									</div>
-								</div>
-							</div>	
-						</div>						
-					</div>
-					<div class="col-xs-4 ">
-						<div class="container-fluid">
-							<div class="row" style="border:1px solid #54acd2">
+					<div class="col-sm-4 ">								
+						<div class="author" style="overflow:hidden">
+							<div ><img src="" alt="" class="authorImg"></div>
+							<div class="authorDetails">
+								<h3 class="xs-pad">xxyyzz</h3>
+								<h4>Software Engineer</h4>
+							</div>
+							<div>
 								<p class="block" style="margin:0px;">
 									There are many places I have taken massage like UK, Turkey, Thailand, Malayasia and India. This I must say is the best experience ever. Done it twice and will do each time I come to India. It’s not a massage. It’s a totally different experience
 								</p>
-
-								<div class="author xs-pad" style="overflow:hidden">
-									<div class="col-xs-4 text-center"><img src="" alt="" class="authorImg"></div>
-									<div class="col-xs-8 authorDetails">
-										<h4>xxyyzz</h4>
-										<p>Software Engineer</p>
-									</div>
-								</div>
-							</div>	
-						</div>						
+							</div>
+						</div>
 					</div>
-				</div>
-
+					<div class="col-sm-4 ">								
+						<div class="author" style="overflow:hidden">
+							<div ><img src="" alt="" class="authorImg"></div>
+							<div class="authorDetails">
+								<h3 class="xs-pad">xxyyzz</h3>
+								<h4>Software Engineer</h4>
+							</div>
+							<div>
+								<p class="block" style="margin:0px;">
+									There are many places I have taken massage like UK, Turkey, Thailand, Malayasia and India. This I must say is the best experience ever. Done it twice and will do each time I come to India. It’s not a massage. It’s a totally different experience
+								</p>
+							</div>
+						</div>
+					</div>
 			</section>
 		</div>
-
-		<div class="fullScreen row md-pad upcomingEve" >
-			<section class="container">
-				<div class="row">
-					<h2 class="text-center md-pad">Upcoming Events</h2>
-
-					<div class="col-sm-6 no-pad sm-pad" >
-						<div class="container-fluid">
-							<div class="row block sm-pad">
-									<div class="col-xs-6">
-										<div>
-											<h3>Pranayama</h3>
-										</div>
-										<img src="images/yoga.jpg" alt="" class="img-responsive">
-									</div>
-									<div class="col-xs-6 no-lpad">
-										<div>
-											<h3>Feb 21st 2015</h3>
-										</div>
-										<p>
-											There are many places I have taken massage like UK, Turkey, Thailand, Malayasia and India. This I must say is the best 
-										</p>
-									</div>								
-							</div>
-						</div>							
-					</div>
-
-					<div class="col-sm-6 no-pad sm-pad">
-						<div class="container-fluid">
-							<div class="row block sm-pad">
-									<div class="col-xs-6">
-										<div>
-											<h3>Palm Meadows</h3>
-										</div>
-										<img src="images/yoga.jpg" alt="" class="img-responsive">
-									</div>
-									<div class="col-xs-6 no-lpad">
-										<div>
-											<h3>Feb 21st 2015</h3>
-										</div>
-										<p>
-											There are many places I have taken massage like UK, Turkey, Thailand, Malayasia and India. This I must say is the best 
-										</p>
-									</div>								
-							</div>
-						</div>							
-					</div>					
-				</div>
-				<div class="row">	
-					<div class="col-sm-6 no-pad sm-pad">
-						<div class="container-fluid">
-							<div class="row block sm-pad">
-									<div class="col-xs-6">
-										<div>
-											<h3>Surya Kriya</h3>
-										</div>
-										<img src="images/yoga.jpg" alt="" class="img-responsive">
-									</div>
-									<div class="col-xs-6 no-lpad">
-										<div>
-											<h3>Feb 21st 2015</h3>
-										</div>
-										<p>
-											There are many places I have taken massage like UK, Turkey, Thailand, Malayasia and India. This I must say is the best 
-										</p>
-									</div>								
-							</div>
-						</div>							
-					</div>
-				</div>
-
-			</section>
-		</div>
-
-
-		<div class="fullScreen row md-pad" >
+		
+		<div class="fullScreen row md-pad toksenBlock" >
 			<section class="container">
 				<div class="row" style="margin-bottom:10px;">
 					<h2 class="text-center md-pad">Main course</h2>
+					<div class="col-sm-6 sm-pad">
+						<div class="row">
+							<h3 class="xs-pad">Thai Yoga Body Work.</h3>
+							<div class="col-sm-6">
+								<img src="images/yoga.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="col-sm-6">
+								<!-- <h3 class="xs-pad">Thai Yoga Body Work.</h3> -->
+								There are many places I have taken massage like UK, Turkey, Thailand, Malayasia and India. This I must say is the best experience ever. Done it twice and will do each time I come to India. It’s not a massage. It’s a totally different experience
+							</div>
+						</div>
+						 
+					</div>
+
+					<div class="col-sm-6 sm-pad">
+						<div class="row">
+							<h3 class="xs-pad">Toksen</h3>
+							<div class="col-sm-6">
+								<img src="images/yoga.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="col-sm-6">
+								<!-- <h3 class="xs-pad">Thai Yoga Body Work.</h3> -->
+								There are many places I have taken massage like UK, Turkey, Thailand, Malayasia and India. This I must say is the best experience ever. Done it twice and will do each time I come to India. It’s not a massage. It’s a totally different experience
+							</div>
+						</div>
+						 
+					</div>
+				</div>
+
+				<div class="row" style="margin-bottom:10px;">
+					
 					<div class="col-sm-6 sm-pad">
 						<div class="toksenYoga">
 							<a href="" >
@@ -390,22 +385,130 @@ h1,h2,h3,h4,h5,h6,p{
 							</a>
 						</div>
 					</div>
+				</div>
+			</section>
+        </div>
+
+		<div class="fullScreen row md-pad upcomingEve" >
+			<section class="container">
+				<div class="row">
+					<h2 class="text-center md-pad">Upcoming Events</h2>
+					<div class="col-sm-6 no-pad sm-pad" >
+						<div class="container-fluid">
+							<h3>Pranayama</h3>
+							<div style="position:relative">
+								<img src="images/yoga.jpg" alt="" >
+								<div style="position:absolute;top:0px;right:0px;">
+									<div>
+										FEB
+									</div>
+								</div>
+							</div>
+							<div class="sm-pad">
+								<p>
+									The ancient healing art of Thai Yoga Bodywork rejuvenates your body, mind and spirit. In a brilliant way, it unifies elements of acupressure, Yoga, reflexology, physiotherapy, meditation and energy healing. Thai Yoga Bodywork brings penetrating massage & gentle yoga movements into a profound
+								</p>
+								
+								<div class="col-sm-3 pull-right text-center showMore"><a href="">More</a></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 no-pad sm-pad" >
+						<div class="container-fluid">
+								<h3>Palm Meadows</h3>
+								<div>
+									<img src="images/yoga.jpg" alt="" >
+								</div>
+								<div class="sm-pad">
+									<p>
+										The ancient healing art of Thai Yoga Bodywork rejuvenates your body, mind and spirit. In a brilliant way, it unifies elements of acupressure, Yoga, reflexology, physiotherapy, meditation and energy healing. Thai Yoga Bodywork brings penetrating massage & gentle yoga movements into a profound
+									</p>
+									
+									<div class="col-sm-3 pull-right text-center showMore"><a href="">More</a></div>
+								</div>
+						</div>
+					</div>
+
+
+
+
+
+					<!-- <div class="col-sm-6 no-pad sm-pad" >
+										<div class="container-fluid">
+											<div class="row block sm-pad">
+													<div class="col-xs-6">
+														<div>
+															<h3>Pranayama</h3>
+														</div>
+														<img src="images/yoga.jpg" alt="" class="img-responsive">
+													</div>
+													<div class="col-xs-6 no-lpad">
+														<div>
+															<h3>Feb 21st 2015</h3>
+														</div>
+														<p>
+															There are many places I have taken massage like UK, Turkey, Thailand, Malayasia and India. This I must say is the best 
+														</p>
+													</div>								
+											</div>
+										</div>							
+									</div>
+									
+									<div class="col-sm-6 no-pad sm-pad">
+										<div class="container-fluid">
+											<div class="row block sm-pad">
+													<div class="col-xs-6">
+														<div>
+															<h3>Palm Meadows</h3>
+														</div>
+														<img src="images/yoga.jpg" alt="" class="img-responsive">
+													</div>
+													<div class="col-xs-6 no-lpad">
+														<div>
+															<h3>Feb 21st 2015</h3>
+														</div>
+														<p>
+															There are many places I have taken massage like UK, Turkey, Thailand, Malayasia and India. This I must say is the best 
+														</p>
+													</div>								
+											</div>
+										</div>							
+									</div>	 -->				
+				</div>
+			
+				</div>
+
 			</section>
 		</div>
-
+		<div class="fullScreen row md-pad">
+				<h2 class="text-center lg-pad">Practitioner list</h2>
+		</div>
+		
+		<div class="fullScreen row footerBlock">
+			<footer class="container"> 
+					<div id="footer-link" class="row text-center">
+						<div class="col-md-2 xs-pad ">
+							<span>&copy;2012 imosha.com</span>
+						</div>	
+						<div class="col-md-8">
+							<ul class="row">				    							
+								<li class="col-md-2 xs-pad"><a href="thai-yoga-bodywork.php">Healing Arts</a></li>
+								<li class="col-md-2 xs-pad"><a href="courses.php">Course</a></li>
+								<li class="col-md-2 xs-pad"><a href="therapy.php">Therapy</a></li>
+								<li class="col-md-2 xs-pad"><a href="aboutme.php">About me</a></li>
+								<li class="col-md-2 xs-pad"><a href="schedule.php">Schedule</a></li>
+								<li class="col-md-2 xs-pad"><a href="contactus.php">Contact</a></li>													
+							</ul>
+						</div>
+						<div class="col-md-2 xs-pad">
+							<span class="powered">Powered By  :<a target="_blank" href="http://www.invensis.net/">Invensis</a></span>
+						</div>
+					</div>
+			 </footer>
+		
+		</div>
 			
-		<footer class="container"> 
-	            <ul id="footer-link"><span style="float:left; font-size:11px;">&copy;2012 imosha.com</span>
-	                <li><a href="thai-yoga-bodywork.php">Healing Arts</a></li>|
-	                <li><a href="courses.php">Course</a></li>|
-	                <li><a href="therapy.php">Therapy</a></li>|
-	                <li><a href="aboutme.php">About me</a></li>|
-	                <li><a href="schedule.php">Schedule</a></li>|
-	                <li><a href="faq.php">Faq</a></li>|
-	                <li><a href="contactus.php">Contact</a></li>
-	                <span class="powered">Powered By  :<a target="_blank" href="http://www.invensis.net/">Invensis</a></span>
-	            </ul>
-		 </footer>
 			
 		<!-- End testimonial  -->
 	</div>
